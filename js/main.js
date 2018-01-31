@@ -76,3 +76,45 @@ console.log('JS Logic Loops');
   if (addNumbers(50, 50) === 100){
     console.log('Congrats!!')
     }
+
+    // This is function does not return anything, we just 'do something' immidiately
+    // this is named function
+    function fullName(fName, lName){
+      console.log(fName + ' ' + lName);
+    }
+
+    fullName('Sumit', 'Kumar');
+
+    // we can also create a function and store in a variable
+
+    var myGreatFunc = function(){
+      console.log('function stored in var');
+    };
+
+    myGreatFunc();
+
+
+    function opendoor(door) {
+      console.log(door);
+      // based on the value of door, log a prize
+      if(door === 'green'){
+        console.log('you opend the green door! you win a prize');
+      } else if (door === 'red') {
+        console.log('you opend the red door, you win a scooter');
+      }
+    }
+
+    // based on value of door console.log a prize
+    opendoor('red');
+    opendoor('green');
+
+    // {} object seat are in curley bracket
+    var foo = {
+      color: 'red'
+    };
+    console.log(typeof foo.color);
+
+    // [] arrey are seat in this bracket
+
+    var cartoons = ['garfield', 'heathclif', 'snoopy'];
+    console.log(cartoons.length) // log 3
